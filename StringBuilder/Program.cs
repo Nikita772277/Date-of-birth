@@ -14,7 +14,7 @@ while (true)
     }
     else
     {
-        Regex regex = new Regex(@"[1-30]{1,2}.[1-12,1-9]{1,2}.[1913-2017,1-9]{3,4}$");
+        Regex regex = new Regex(@"[1-30,1-9]{1,2}.[1-12,1-9]{1,2}.[1913-2017,1-9]{3,4}$");
         regex.IsMatch(date);
         if (regex.IsMatch(date))
         {
